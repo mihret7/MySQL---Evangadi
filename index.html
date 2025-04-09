@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Iphone</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 30px;
+        max-width: 600px;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #444;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #333;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input[type="submit"],
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover,
+      button:hover {
+        background-color: #45a049;
+      }
+
+      div {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Add iPhone</h1>
+    <form action="http://localhost:1234/add-product" method="post">
+      <div>
+        <h2>Add Products</h2>
+        <label for="productname">Product Name </label>
+        <br />
+        <input type="text" name="product_name" />
+        <br />
+        <label for="producturl">Product Url</label>
+        <br />
+        <input type="text" name="product_url" />
+      </div>
+      <div>
+        <h2>Add product description</h2>
+        <label for="product_brief_description">product brief description</label>
+        <br />
+        <textarea
+          name="product_brief_description"
+          id=""
+          cols="30"
+          rows="5"
+        ></textarea>
+        <br />
+        <label for="product_description">product description</label>
+        <br />
+        <textarea
+          name="product_description"
+          id=""
+          cols="30"
+          rows="5"
+        ></textarea>
+        <br />
+        <label for="product_img">product image url </label>
+        <br />
+        <input type="text" name="product_img" />
+        <br />
+        <label for="product_link">product link url</label>
+        <br />
+        <input type="text" name="product_link" />
+      </div>
+      <div>
+        <h2>Add product Price</h2>
+        <label for="starting_price">starting price </label>
+        <br />
+        <input type="text" name="starting_price" />
+        <br />
+        <label for="price_range">price range</label>
+        <br />
+        <input type="text" name="price_range" />
+      </div>
+      <div>
+        <h2>Added by: </h2>
+        <label for="user_name">Name: </label>
+        <br />
+        <input type="text" name="user_name" />
+        <br />
+        <label for="user_password">password</label>
+        <br />
+        <input type="text" name="user_password" />
+      </div>
+
+      <br /><br />
+      <input type="submit" value="Add product" />
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
